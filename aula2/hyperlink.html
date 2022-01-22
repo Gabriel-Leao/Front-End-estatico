@@ -1,7 +1,9 @@
 <!-- Elemento de ancora, onde vocẽ liga o texto a algum determinado conteúdo com a tag <a>. Consegue ancorar os seguintes items:
     - URL
+    - Fragmentos
     - E-mail
     - Telefone
+    - Entre Outros.
  -->
 
 <!-- Ancoragem por URL  -->
@@ -12,6 +14,33 @@
          </a>
      </p>
  </div>
+
+ <!-- Faz o download da imagem referenciada -->
+ <div>
+     <p>
+         <a href="../aula1/assets/images/john-lennon.png" download="">
+            Faz o download da imagem
+         </a>
+     </p>
+ </div>
+
+ <!-- Faz uma âncora com o E-mail -->
+ <div>
+     <p>
+         <a href="mailto:gabriellsilva1200@gmail.com" >
+            Entre em contato
+         </a>
+     </p>
+ </div>
+
+ <!-- Âncoragem por Telefone -->
+<div>
+    <p>
+        <a href="tel:+5511947013466" >
+            Ligue para mim
+        </a>
+    </p>
+</div>
 
  <!-- Ancoragem por Fragmento -->
  <div>
@@ -34,11 +63,12 @@
  <!-- Caminho Absoluto X Caminho Relativo -->
  <div class="Caminho Absoluto">
  <p>
+    <!-- A tag target ao invés de substituir a página, leva para uma aba nova-->
     <a href="https://www.google.com.br" target="_blank">
         Absoluto
     </a>
 </p>
-<!-- Sempre que o caminho for algo externo do projeto usar caminho obsoluto -->
+<!-- Sempre que o caminho for algo externo do projeto usar caminho obsoluto, ele inclui o protocolo de dominio se for uma url ou seja o https:// -->
 </div>
 
 <div class="Caminho Relativo">
