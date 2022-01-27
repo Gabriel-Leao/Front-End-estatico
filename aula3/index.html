@@ -5,44 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <style>
-        /* Seletor universal, o estilo dele serve para todas as páginas No CSS o que vem depois sobrepões o que vem antes*/
-        * {
-            margin: 0%;
-        }
-        /* Seletor por tag */
-        body {
-            background-color: #ec1c00ea;
-        }
-        h1 {
-            color: blue;
-            font-size: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        /* Seletor por classe  pode-se colocar mais de uma classe separada por vírgula e serve para infitos elementos*/
-        .titulo,
-        .subtitulo {
-            color: #fcf81e;
-        }
-
-        /* Seletor por ID, serve para um elemento */
-        #negrito {
-            font-weight: bold;
-        }
-
-        /*  Seletor por atríbuto depois pesquisar em https://developer.mozilla.org/pt-BR/docs/Web/CSS/Attribute_selectors*/
-        a[title="link"] {
-            color: rgb(251, 255, 0);
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 class="titulo">Leão é lindo</h1>
     <h2 class="subtitulo">Vai Corinthians!</h2>
-    <p id="negrito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint fuga tempore nostrum aliquam hic impedit minus harum saepe similique, quis cupiditate veritatis ea amet, neque reiciendis asperiores assumenda? Distinctio.</p>
-    <a href="https://www.google.com.br" target="_blank" title="link">Este é um link</a>
+    <div>
+       <p id="negrito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint fuga tempore nostrum aliquam hic impedit minus harum saepe similique, quis cupiditate veritatis ea amet, neque reiciendis asperiores assumenda? Distinctio.</p>
+       <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur iure, dicta repudiandae eos rerum qui minima adipisci velit id repellendus veniam deleniti illo quaerat et? Unde accusantium possimus doloribus voluptatem!</span><br>
+       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias eos animi numquam vel excepturi hic consectetur quia voluptatem iusto eum, blanditiis qui quam distinctio nihil omnis nam possimus! Beatae.</span>
+    </div>
+    <a href="https://www.google.com.br" target="_blank" title="link">Este é um link</a><br>
+    <a href="https://www.python.org" target="_blank">Python</a><br>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors">Clique aqui para ter mais informações</a>
 </body>
 </html>
