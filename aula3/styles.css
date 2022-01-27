@@ -1,0 +1,36 @@
+/* Seletor universal, o estilo dele serve para todas as páginas No CSS o que vem depois sobrepões o que vem antes*/
+* {
+    margin: 0%;
+}
+/* Seletor por tag */
+h1 {
+    color: blue;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Seletor por classe  pode-se colocar mais de uma classe separada por vírgula e serve para infitos elementos*/
+.titulo,
+.subtitulo {
+    color: #1e34fc;
+}
+
+/* Seletor por ID, serve para um elemento */
+#negrito {
+    font-weight: bold;
+}
+
+/*  Seletor por atríbuto */
+a[title] {
+    color: rgb(0, 175, 245);
+    text-decoration: none;
+}
+/* <a> elementos combinando com um href "https://www.python.org" */
+a[href="https://www.python.org"] {
+    color: rgb(4, 176, 255);
+}
+
+p ~ span {
+    border: 2px solid rgb(228, 5, 5);
+}
