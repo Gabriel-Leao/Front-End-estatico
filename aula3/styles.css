@@ -21,16 +21,69 @@ h1 {
     font-weight: bold;
 }
 
-/*  Seletor por atríbuto */
+/* Seletor por atributo */
+/* Seleciona todos os elementos <a> que possuem o atributo title */
 a[title] {
-    color: rgb(0, 175, 245);
-    text-decoration: none;
-}
-/* <a> elementos combinando com um href "https://www.python.org" */
-a[href="https://www.python.org"] {
-    color: rgb(4, 176, 255);
+    color: red;
 }
 
+/* Seleciona todos os elementos <a> que possuem o atributo title = "titulo-1" */
+a[title="titulo-1"] {
+    color: black;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto"
+    ou que possuam na sua lista de classes, a classe "texto" */
+p[class~="texto"] {
+    font-size: 32px;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto-qualquer"
+    ou inicie por texto-qualquer, seguido de hífen */
+p[class|="texto-qualquer"] {
+    margin-top: 24px;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto"
+    ou inicie por texto, seguido de hífen */
+p[class|="texto"] {
+    margin-top: 24px;
+}
+
+/* Seleciona todos os elementos <p> cujo atributo class inicia com "texto" */
+p[class^="texto"] {
+    border: 1px solid black;
+}
+
+/* Seleciona todos os elementos <p> cujo atributo class termina com "verde" */
+p[class$="verde"] {
+    color: green;
+}
+
+/* Seleciona elementos <a> com um title contendo "titu" */
+a[title*="titu"] {
+    color: blue;
+}
+ /* O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente. */
+p + br + span {
+    color: red;
+}
+
+/* Seletor gerais de irmãos  */
 p ~ span {
-    border: 2px solid rgb(228, 5, 5);
+    color: red;
+}
+
+/* Seletor de filhos */
+ul > li {
+    border-bottom: 1px solid black;
+    color: green;
+}
+
+div > .classe-qualquer {
+    border: 1px solid blue;
+}
+
+div .texto-negrito {
+    font-weight: bolder;
 }
