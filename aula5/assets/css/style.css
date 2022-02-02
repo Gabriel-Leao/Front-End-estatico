@@ -24,14 +24,14 @@ body {
 }
 
 img {
-    display: block;
     max-width: 100%;
+    display: block;
 }
 
 .header {
     background-color: #ef4848;
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -60,8 +60,7 @@ img {
 
 .flex > div {
     flex: 1 1 200px;
-    margin: 10px;
-    justify-items: center;
+    margin: 10px
 }
 
 /* CSS Grid 1 */
@@ -72,11 +71,6 @@ img {
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
 }
 
 .sidebar > div {
@@ -130,4 +124,42 @@ img {
     grid-column: 1;
     grid-row: 2;
     align-self: end;
+}
+
+/* CSS Grid 3 */
+.grid-3 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+max-width: 800px;
+padding: 10px;
+margin: 0 auto;
+grid-gap: 20px;
+}
+
+.grid-3 > div:nth-child(n + 4) {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+align-items: center;
+}
+
+.grid-3 > div.anuncio {
+grid-column: 1;
+grid-row: 2 / 5;
+border-top: 10px solid tomato;
+display: block;
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-3 > div:nth-child(n + 4) {
+        display: block;
+    }
+    .grid-3 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
 }
